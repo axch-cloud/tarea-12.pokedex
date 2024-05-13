@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <title>Clase 12</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokedex</h1>
+        <div id="total">Hay <strong id="cantidadPokemon"></strong> pokemones en la pokedex</div>
+            <div class="row">
+                <table class="table">
+                    <tbody>
+                        <tr id="indices">
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <ul class="list-group" id="lista">
+                    </ul>
+                </div>
+                <div class="col">
+                    <div id="default">Selecciona un pokemon para ver su informacion</div>
+                    <div class="border px-5 d-none" id="descripcion">
+                        <div class="h3 px-3" id="nombre"></div>
+                        <img width="500" height="500" id="pic"></img>
+                        <div class="h4">Tipos</div>
+                        <div id="tipos"></div>
+                        <div class="h4">Habilidades</div>
+                        <div id="habilidades"></div>
+                        <div class="h4">Movimientos</div>
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Movimientos</th>
+                                    <th scope="col">Versiones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="movimientos">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="pokedex.js"></script>
+</body>
+</html>
